@@ -51,4 +51,12 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := libmdmdetect
+LOCAL_SRC_FILES := proprietary/lib/$(LOCAL_MODULE).so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
 endif

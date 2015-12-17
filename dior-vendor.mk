@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqminvapi \
     libtime_genoff \
+	libmdmdetect \
     libTimeService
 
 $(call inherit-product, vendor/xiaomi/dior/dior-vendor-blobs.mk)
