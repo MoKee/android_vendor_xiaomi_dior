@@ -1,4 +1,5 @@
 # Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2016 The MoKee Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -35,6 +36,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:system/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
     vendor/xiaomi/dior/proprietary/etc/acdbdata/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
     vendor/xiaomi/dior/proprietary/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
+    vendor/xiaomi/dior/proprietary/lib/soundfx/libbundlewrapper.so:system/lib/libbundlewrapper.so \
+    vendor/xiaomi/dior/proprietary/lib/soundfx/libdirac.so:system/lib/libdirac.so \
+    vendor/xiaomi/dior/proprietary/lib/soundfx/libdownmix.so:system/lib/libdownmix.so \
+    vendor/xiaomi/dior/proprietary/lib/soundfx/libeffectproxy.so:system/lib/libeffectproxy.so \
+    vendor/xiaomi/dior/proprietary/lib/soundfx/libldnhncr.so:system/lib/libldnhncr.so \
+    vendor/xiaomi/dior/proprietary/lib/soundfx/libqcompostprocbundle.so:system/lib/libqcompostprocbundle.so \
+    vendor/xiaomi/dior/proprietary/lib/soundfx/libqcomvisualizer.so:system/lib/libqcomvisualizer.so \
+    vendor/xiaomi/dior/proprietary/lib/soundfx/libqcomvoiceprocessing.so:system/lib/libqcomvoiceprocessing.so \
+    vendor/xiaomi/dior/proprietary/lib/soundfx/libreverbwrapper.so:system/lib/libreverbwrapper.so \
+    vendor/xiaomi/dior/proprietary/lib/soundfx/libvisualizer.so:system/lib/libvisualizer.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
@@ -126,6 +137,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw
 
+# Charger
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/dior/proprietary/bin/charger_monitor:system/bin/charger_monitor
+
 # Chromatix
 chromatix_files := $(shell ls vendor/xiaomi/dior/proprietary/vendor/lib/libchromatix*)
 PRODUCT_COPY_FILES += $(foreach file, $(chromatix_files), \
@@ -168,6 +183,9 @@ PRODUCT_COPY_FILES += \
 
 # Graphics
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/dior/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    vendor/xiaomi/dior/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+    vendor/xiaomi/dior/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
     vendor/xiaomi/dior/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/xiaomi/dior/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/xiaomi/dior/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
@@ -204,7 +222,7 @@ PRODUCT_COPY_FILES += \
 # Media
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
-    vendor/xiaomi/dior/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so
+    vendor/xiaomi/dior/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
 
 # Perf
 PRODUCT_COPY_FILES += \
