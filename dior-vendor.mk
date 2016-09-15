@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,13 +16,13 @@
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
-    com.qualcomm.location \
-    com.qualcomm.services.location \
     TimeService
 
 # Prebuilt vendor/libs needed for compilation
 PRODUCT_PACKAGES += \
     libqminvapi \
-    libtime_genoff
+    libtime_genoff \
+    libmdmdetect \
+    libTimeService
 
 $(call inherit-product, vendor/xiaomi/dior/dior-vendor-blobs.mk)
