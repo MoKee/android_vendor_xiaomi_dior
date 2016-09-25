@@ -100,7 +100,6 @@ PRODUCT_COPY_FILES += \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
-	vendor/xiaomi/dior/proprietary/vendor/lib/libFaceDeform.so:system/vendor/lib/libFaceDeform.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libFaceProc.so:system/vendor/lib/libFaceProc.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
