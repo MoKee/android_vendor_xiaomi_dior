@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 
-# ACDB (v7.5.1.0)
+# ACDB (V8.0.1.0)
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/xiaomi/dior/proprietary/etc/acdbdata/MTP/MTP_General_cal.acdb:system/etc/acdbdata/MTP/MTP_General_cal.acdb \
@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
     vendor/xiaomi/dior/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so
 
-# Audio (v7.5.1.0)
+# Audio (V8.0.1.0)
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/lib/soundfx/libbundlewrapper.so:system/lib/libbundlewrapper.so \
     vendor/xiaomi/dior/proprietary/lib/soundfx/libdownmix.so:system/lib/libdownmix.so \
@@ -67,7 +67,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/xiaomi/dior/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so
 
-# Camera (v7.5.1.0)
+# Camera (V8.0.1.0)
 PRODUCT_COPY_FILES += \
 	vendor/xiaomi/dior/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
 	vendor/xiaomi/dior/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
@@ -142,23 +142,23 @@ PRODUCT_COPY_FILES += \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
 
-# Camera firmware (v7.5.1.0)
+# Camera firmware (V8.0.1.0)
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw
 
-# libchromatix* (v7.5.1.0)
+# libchromatix* (V8.0.1.0)
 chromatix_files := $(shell ls vendor/xiaomi/dior/proprietary/vendor/lib/libchromatix*)
 PRODUCT_COPY_FILES += $(foreach file, $(chromatix_files), \
         $(file):system/vendor/lib/$(shell basename $(file)))
 
-# libactuator* (v7.5.1.0)
+# libactuator* (V8.0.1.0)
 libactuator_files := $(shell ls vendor/xiaomi/dior/proprietary/vendor/lib/libactuator*)
 PRODUCT_COPY_FILES += $(foreach file, $(libactuator_files), \
         $(file):system/vendor/lib/$(shell basename $(file)))
 
-# DRM (v7.5.1.0)
+# DRM (V8.0.1.0)
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/xiaomi/dior/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
@@ -287,7 +287,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/vendor/lib/libsensor_test.so:system/vendor/lib/libsensor_test.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libsensor_user_cal.so:system/vendor/lib/libsensor_user_cal.so
 
-# Thermal (v7.5.1.0)
+# Thermal (V8.0.1.0)
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/xiaomi/dior/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
@@ -297,7 +297,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/bin/time_daemon:system/bin/time_daemon
 
-# Venus (media) firmware (v7.5.1.0)
+# Venus (media) firmware (V8.0.1.0)
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
     vendor/xiaomi/dior/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
@@ -307,7 +307,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
     vendor/xiaomi/dior/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
 
-# Wifi (v7.5.1.0)
+# Wifi (V8.0.1.0)
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00 \
     vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01 \
