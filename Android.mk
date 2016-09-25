@@ -20,16 +20,16 @@ ifeq ($(TARGET_DEVICE),dior)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := TimeService
-LOCAL_SRC_FILES := proprietary/app/TimeService/$(LOCAL_MODULE).apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := proprietary/app/TimeService/TimeService.apk
 LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libTimeService
-LOCAL_SRC_FILES := proprietary/vendor/lib/$(LOCAL_MODULE).so
+LOCAL_SRC_FILES := proprietary/vendor/lib/libTimeService.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
@@ -37,7 +37,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
-LOCAL_SRC_FILES := proprietary/vendor/lib/$(LOCAL_MODULE).so
+LOCAL_SRC_FILES := proprietary/vendor/lib/libtime_genoff.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
@@ -45,7 +45,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libqminvapi
-LOCAL_SRC_FILES := proprietary/lib/$(LOCAL_MODULE).so
+LOCAL_SRC_FILES := proprietary/lib/libqminvapi.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
@@ -53,7 +53,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libmdmdetect
-LOCAL_SRC_FILES := proprietary/lib/$(LOCAL_MODULE).so
+LOCAL_SRC_FILES := proprietary/lib/libmdmdetect.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
