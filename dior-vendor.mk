@@ -84,7 +84,6 @@ PRODUCT_COPY_FILES += \
 	vendor/xiaomi/dior/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
 	vendor/xiaomi/dior/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
 	vendor/xiaomi/dior/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
-	vendor/xiaomi/dior/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
 	vendor/xiaomi/dior/proprietary/lib/hw/camera.msm8226.so:system/lib/hw/camera.vendor.msm8226.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libarcsoft_beauty_shot.so:system/vendor/lib/libarcsoft_beauty_shot.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -99,9 +98,8 @@ PRODUCT_COPY_FILES += \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
-	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
+	vendor/xiaomi/dior/proprietary/vendor/lib/libFaceDeform.so:system/vendor/lib/libFaceDeform.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libFaceProc.so:system/vendor/lib/libFaceProc.so \
-	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_hi256.so:system/vendor/lib/libmmcamera_hi256.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
@@ -136,8 +134,6 @@ PRODUCT_COPY_FILES += \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so:system/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so:system/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_sunny_q13s01b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13s01b_eeprom.so \
-	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
-	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_truly_cm7700_eeprom.so:system/vendor/lib/libmmcamera_truly_cm7700_eeprom.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
@@ -145,12 +141,20 @@ PRODUCT_COPY_FILES += \
 
 # Camera (TheMuppets Motorola msm8226-common)
 PRODUCT_COPY_FILES += \
+	vendor/xiaomi/dior/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
-	vendor/xiaomi/dior/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
+	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
+	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
+	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
+
+# Camera (TheMuppets Motorola shamu)
+PRODUCT_COPY_FILES += \
+	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
+	vendor/xiaomi/dior/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so
 
 # Camera firmware (V8.0.1.0)
 PRODUCT_COPY_FILES += \
@@ -173,6 +177,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/xiaomi/dior/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/xiaomi/dior/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
+    vendor/xiaomi/dior/proprietary/vendor/lib/libdrmdiag.so:system/vendor/lib/libdrmdiag.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
