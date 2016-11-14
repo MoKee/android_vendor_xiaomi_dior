@@ -72,11 +72,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
-# Bluetooth (TheMuppets Motorola msm8226-common)
+# Bluetooth (razor-MOB30X)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/xiaomi/dior/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
-    vendor/xiaomi/dior/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so
+    vendor/xiaomi/dior/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init
 
 # Camera (V8.0.1.0)
 PRODUCT_COPY_FILES += \
