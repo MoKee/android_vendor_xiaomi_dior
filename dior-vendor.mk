@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
 
 # ADSP (TheMuppets Motorola msm8226-common)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/bin/adsprpcd:system/bin/adsprpcd \
+    vendor/xiaomi/dior/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
     vendor/xiaomi/dior/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
@@ -78,7 +78,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera (V8.0.1.0)
 PRODUCT_COPY_FILES += \
-	vendor/xiaomi/dior/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
+	vendor/xiaomi/dior/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
 	vendor/xiaomi/dior/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
 	vendor/xiaomi/dior/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
 	vendor/xiaomi/dior/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
@@ -147,7 +147,8 @@ PRODUCT_COPY_FILES += \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
-	vendor/xiaomi/dior/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
+	vendor/xiaomi/dior/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
+        vendor/xiaomi/dior/proprietary/vendor/lib/libstlport.so:system/vendor/lib/libstlport.so
 
 # Camera (TheMuppets Motorola shamu)
 PRODUCT_COPY_FILES += \
@@ -172,7 +173,7 @@ PRODUCT_COPY_FILES += $(foreach file, $(libactuator_files), \
 
 # DRM (seed)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/bin/qseecomd:system/bin/qseecomd \
+    vendor/xiaomi/dior/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
     vendor/xiaomi/dior/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libdrmdiag.so:system/vendor/lib/libdrmdiag.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
@@ -183,7 +184,10 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/bin/gsiff_daemon:system/bin/gsiff_daemon \
+    vendor/xiaomi/dior/proprietary/vendor/bin/location-mq:system/vendor/bin/location-mq \
+    vendor/xiaomi/dior/proprietary/vendor/bin/xtwifi-client:system/vendor/bin/xtwifi-client \
+    vendor/xiaomi/dior/proprietary/vendor/bin/xtwifi-inet-agent:system/vendor/bin/xtwifi-inet-agent \
+    vendor/xiaomi/dior/proprietary/vendor/bin/gsiff_daemon:system/vendor/bin/gsiff_daemon \
     vendor/xiaomi/dior/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/xiaomi/dior/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
@@ -241,7 +245,7 @@ PRODUCT_COPY_FILES += \
 
 # Qualcomm (TheMuppets Xiaomi cancro)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/bin/irsc_util:system/bin/irsc_util \
+    vendor/xiaomi/dior/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
     vendor/xiaomi/dior/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
@@ -259,11 +263,11 @@ PRODUCT_COPY_FILES += \
 
 # Radio (TheMuppets Xiaomi cancro)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/bin/netmgrd:system/bin/netmgrd \
-    vendor/xiaomi/dior/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/xiaomi/dior/proprietary/bin/radish:system/bin/radish \
-    vendor/xiaomi/dior/proprietary/bin/rfs_access:system/bin/rfs_access \
-    vendor/xiaomi/dior/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/xiaomi/dior/proprietary/vendor/bin/netmgrd:system/vendor/bin/netmgrd \
+    vendor/xiaomi/dior/proprietary/vendor/bin/qmuxd:system/vendor/bin/qmuxd \
+    vendor/xiaomi/dior/proprietary/vendor/bin/radish:system/vendor/bin/radish \
+    vendor/xiaomi/dior/proprietary/vendor/bin/rfs_access:system/vendor/bin/rfs_access \
+    vendor/xiaomi/dior/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
     vendor/xiaomi/dior/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/xiaomi/dior/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/dior/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
@@ -286,7 +290,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors (TheMuppets Xiaomi cancro)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
+    vendor/xiaomi/dior/proprietary/vendor/bin/sensors.qcom:system/vendor/bin/sensors.qcom \
     vendor/xiaomi/dior/proprietary/vendor/lib/hw/sensors.msm8226.so:system/vendor/lib/hw/sensors.msm8226.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libAKM8963.so:system/vendor/lib/libAKM8963.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
@@ -296,13 +300,13 @@ PRODUCT_COPY_FILES += \
 
 # Thermal (V8.0.1.0)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/bin/thermal-engine:system/bin/thermal-engine \
+    vendor/xiaomi/dior/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/xiaomi/dior/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so
 
 # Time services
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/bin/time_daemon:system/bin/time_daemon
+    vendor/xiaomi/dior/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon
 
 # Venus (media) firmware (V8.0.1.0)
 PRODUCT_COPY_FILES += \
@@ -316,7 +320,7 @@ PRODUCT_COPY_FILES += \
 
 # WideVine (angler)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/armani/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+    vendor/xiaomi/dior/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 # Wifi (V8.0.1.0)
 PRODUCT_COPY_FILES += \
@@ -334,4 +338,4 @@ PRODUCT_COPY_FILES += \
 # Misc
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
-    vendor/xiaomi/dior/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches
+    vendor/xiaomi/dior/proprietary/vendor/bin/fm_qsoc_patches:system/vendor/bin/fm_qsoc_patches
