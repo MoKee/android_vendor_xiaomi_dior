@@ -185,8 +185,6 @@ PRODUCT_COPY_FILES += \
 # GPS
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/vendor/bin/location-mq:system/vendor/bin/location-mq \
-    vendor/xiaomi/dior/proprietary/vendor/bin/xtwifi-client:system/vendor/bin/xtwifi-client \
-    vendor/xiaomi/dior/proprietary/vendor/bin/xtwifi-inet-agent:system/vendor/bin/xtwifi-inet-agent \
     vendor/xiaomi/dior/proprietary/vendor/bin/gsiff_daemon:system/vendor/bin/gsiff_daemon \
     vendor/xiaomi/dior/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/xiaomi/dior/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
