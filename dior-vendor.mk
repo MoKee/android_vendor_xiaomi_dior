@@ -79,10 +79,10 @@ PRODUCT_COPY_FILES += \
 # Camera (V8.0.1.0)
 PRODUCT_COPY_FILES += \
 	vendor/xiaomi/dior/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
-	vendor/xiaomi/dior/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
-	vendor/xiaomi/dior/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
+	vendor/xiaomi/dior/proprietary/lib/libmmcamera_interface.so:system/vendor/lib/libmmcamera_interface.so \
+	vendor/xiaomi/dior/proprietary/lib/libmmjpeg_interface.so:system/vendor/lib/libmmjpeg_interface.so \
 	vendor/xiaomi/dior/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
-	vendor/xiaomi/dior/proprietary/lib/hw/camera.msm8226.so:system/lib/hw/camera.vendor.msm8226.so \
+	vendor/xiaomi/dior/proprietary/lib/hw/camera.msm8226.so:system/vendor/lib/hw/camera.vendor.msm8226.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libarcsoft_beauty_shot.so:system/vendor/lib/libarcsoft_beauty_shot.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
@@ -139,7 +139,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera (TheMuppets Motorola msm8226-common)
 PRODUCT_COPY_FILES += \
-	vendor/xiaomi/dior/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+	vendor/xiaomi/dior/proprietary/lib/libqomx_core.so:system/vendor/lib/libqomx_core.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
@@ -157,9 +157,9 @@ PRODUCT_COPY_FILES += \
 
 # Camera firmware (V8.0.1.0)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
-    vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
-    vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw
+    vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/vendor/firmware/cpp_firmware_v1_1_1.fw \
+    vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/vendor/firmware/cpp_firmware_v1_1_6.fw \
+    vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/vendor/firmware/cpp_firmware_v1_2_0.fw
 
 # libchromatix* (V8.0.1.0)
 chromatix_files := $(shell ls vendor/xiaomi/dior/proprietary/vendor/lib/libchromatix*)
@@ -186,18 +186,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/vendor/bin/location-mq:system/vendor/bin/location-mq \
     vendor/xiaomi/dior/proprietary/vendor/bin/gsiff_daemon:system/vendor/bin/gsiff_daemon \
-    vendor/xiaomi/dior/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/xiaomi/dior/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+    vendor/xiaomi/dior/proprietary/lib/libloc_api_v02.so:system/vendor/lib/libloc_api_v02.so \
+    vendor/xiaomi/dior/proprietary/lib/libloc_ds_api.so:system/vendor/lib/libloc_ds_api.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so
 
 # Graphics (TheMuppets Motorola msm8226-common)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    vendor/xiaomi/dior/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-    vendor/xiaomi/dior/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
-    vendor/xiaomi/dior/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
+    vendor/xiaomi/dior/proprietary/etc/firmware/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw \
+    vendor/xiaomi/dior/proprietary/etc/firmware/a300_pm4.fw:system/vendor/firmware/a300_pm4.fw \
+    vendor/xiaomi/dior/proprietary/etc/firmware/a330_pfp.fw:system/vendor/firmware/a330_pfp.fw \
+    vendor/xiaomi/dior/proprietary/etc/firmware/a330_pm4.fw:system/vendor/firmware/a330_pm4.fw \
     vendor/xiaomi/dior/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     vendor/xiaomi/dior/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
@@ -276,7 +276,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
     vendor/xiaomi/dior/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/xiaomi/dior/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
-    vendor/xiaomi/dior/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
+    vendor/xiaomi/dior/proprietary/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
@@ -313,13 +313,13 @@ PRODUCT_COPY_FILES += \
 
 # Venus (media) firmware (V8.0.1.0)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
-    vendor/xiaomi/dior/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
+    vendor/xiaomi/dior/proprietary/etc/firmware/venus.b00:system/vendor/firmware/venus.b00 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/venus.b01:system/vendor/firmware/venus.b01 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/venus.b02:system/vendor/firmware/venus.b02 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/venus.b03:system/vendor/firmware/venus.b03 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/venus.b04:system/vendor/firmware/venus.b04 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/venus.mbn:system/vendor/firmware/venus.mbn \
+    vendor/xiaomi/dior/proprietary/etc/firmware/venus.mdt:system/vendor/firmware/venus.mdt
 
 # WideVine (angler)
 PRODUCT_COPY_FILES += \
@@ -327,15 +327,15 @@ PRODUCT_COPY_FILES += \
 
 # Wifi (V8.0.1.0)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b06:system/etc/firmware/wcnss.b06 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b07:system/etc/firmware/wcnss.b07 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b08:system/etc/firmware/wcnss.b08 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09 \
-    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
+    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b00:system/vendor/firmware/wcnss.b00 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b01:system/vendor/firmware/wcnss.b01 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b02:system/vendor/firmware/wcnss.b02 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b04:system/vendor/firmware/wcnss.b04 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b06:system/vendor/firmware/wcnss.b06 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b07:system/vendor/firmware/wcnss.b07 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b08:system/vendor/firmware/wcnss.b08 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.b09:system/vendor/firmware/wcnss.b09 \
+    vendor/xiaomi/dior/proprietary/etc/firmware/wcnss.mdt:system/vendor/firmware/wcnss.mdt \
     vendor/xiaomi/dior/proprietary/lib/libqminvapi.so:system/lib/libqminvapi.so
 
 # Misc
