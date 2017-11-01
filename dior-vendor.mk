@@ -74,7 +74,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth (razor-MOB30X)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init
+    vendor/xiaomi/dior/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init
 
 # Camera (V8.0.1.0)
 PRODUCT_COPY_FILES += \
@@ -243,7 +243,7 @@ PRODUCT_COPY_FILES += \
 
 # Perf (TheMuppets Motorola msm8226-common)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/bin/mpdecision:system/bin/mpdecision \
+    vendor/xiaomi/dior/proprietary/vendor/bin/mpdecision:system/vendor/bin/mpdecision \
     vendor/xiaomi/dior/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
 
 # Qualcomm (TheMuppets Xiaomi cancro)
@@ -271,11 +271,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/vendor/bin/radish:system/vendor/bin/radish \
     vendor/xiaomi/dior/proprietary/vendor/bin/rfs_access:system/vendor/bin/rfs_access \
     vendor/xiaomi/dior/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
-    vendor/xiaomi/dior/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
-    vendor/xiaomi/dior/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/xiaomi/dior/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
-    vendor/xiaomi/dior/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
-    vendor/xiaomi/dior/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/xiaomi/dior/proprietary/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
