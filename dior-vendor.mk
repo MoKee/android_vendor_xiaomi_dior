@@ -24,7 +24,8 @@ PRODUCT_PACKAGES += \
     libqminvapi \
     libtime_genoff \
     libmdmdetect \
-    libTimeService
+    libTimeService \
+    vendor.qti.hardware.fm@1.0
 
 # ADSP (TheMuppets Motorola msm8226-common)
 PRODUCT_COPY_FILES += \
@@ -161,6 +162,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/vendor/firmware/cpp_firmware_v1_1_1.fw \
     vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/vendor/firmware/cpp_firmware_v1_1_6.fw \
     vendor/xiaomi/dior/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/vendor/firmware/cpp_firmware_v1_2_0.fw
+
+# FM (OnePlus OPR6.170623.013)
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/dior/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
+    vendor/xiaomi/dior/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
 
 # libchromatix* (V8.0.1.0)
 chromatix_files := $(shell ls vendor/xiaomi/dior/proprietary/vendor/lib/libchromatix*)
