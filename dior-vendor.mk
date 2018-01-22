@@ -16,8 +16,7 @@
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
-    TimeService \
-    GoogleCamera
+    TimeService
 
 # Prebuilt vendor/libs needed for compilation
 PRODUCT_PACKAGES += \
