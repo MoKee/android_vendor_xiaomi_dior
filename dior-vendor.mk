@@ -295,7 +295,7 @@ PRODUCT_COPY_FILES += \
 # Sensors (TheMuppets Xiaomi cancro)
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/vendor/bin/sensors.qcom:system/vendor/bin/sensors.qcom \
-    vendor/xiaomi/dior/proprietary/vendor/lib/hw/sensors.msm8226.so:system/vendor/lib/hw/sensors.msm8226.so \
+    vendor/xiaomi/dior/proprietary/vendor/lib/sensors.msm8226.so:system/vendor/lib/sensors.msm8226.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libAKM8963.so:system/vendor/lib/libAKM8963.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
