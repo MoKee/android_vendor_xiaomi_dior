@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
 	vendor/xiaomi/dior/proprietary/lib/libmmcamera_interface.so:system/vendor/lib/libmmcamera_interface.so \
 	vendor/xiaomi/dior/proprietary/lib/libmmjpeg_interface.so:system/vendor/lib/libmmjpeg_interface.so \
 	vendor/xiaomi/dior/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
-	vendor/xiaomi/dior/proprietary/lib/hw/camera.msm8226.so:system/vendor/lib/hw/camera.vendor.msm8226.so \
+	vendor/xiaomi/dior/proprietary/lib/hw/camera.msm8226.so:system/vendor/lib/hw/camera.msm8226.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libarcsoft_beauty_shot.so:system/vendor/lib/libarcsoft_beauty_shot.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
 	vendor/xiaomi/dior/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
