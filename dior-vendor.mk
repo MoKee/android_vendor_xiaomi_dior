@@ -75,7 +75,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth (razor-MOB30X)
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/dior/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init
+    vendor/xiaomi/dior/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
+    vendor/xiaomi/dior/proprietary/vendor/lib/libaptX_encoder.so:system/vendor/lib/libaptX_encoder.so
 
 # Camera (V8.0.1.0)
 PRODUCT_COPY_FILES += \
